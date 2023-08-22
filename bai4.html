@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai 4</title>
+</head>
+<body>
+    
+    <div>
+        <h2>Student Management</h2>
+        <label for="studentId">StudentId</label>
+        <input type="text" name="studentId" id="studentId">
+        <br>
+        <label for="studentName">StudentName</label>
+        <input type="text" name="studentName" id="studentName"> 
+        <br>
+        <label for="age">Age</label>
+        <input type="text" name="age" id="age"> 
+        <br>
+        <label for="phone">Phone</label>
+        <input type="text" name="phone" id="phone">
+        <br>
+         <label for="email">Email</label>
+        <input type="text" name="email" id="email">
+        <br>
+
+    <button onclick="create()">Create</button>
+
+
+    </div>
+    <div id="studentInfo" class="hidden">
+        <h2>Thông tin sinh viên:</h2>
+        <p><strong>Student ID:</strong> <span id="infoStudentId"></span></p>
+       <p><strong>Student Name:</strong> <span id="infoStudentName"></span></p>
+        <p><strong>Age:</strong> <span id="infoAge"></span></p>
+        <p><strong>Phone:</strong> <span id="infoPhone"></span></p>
+        <p><strong>Email:</strong> <span id="infoEmail"></span></p>
+    </div>
+
+
+    <script src="./js/bai4.js"></script>
+    
+</body>
+</html>

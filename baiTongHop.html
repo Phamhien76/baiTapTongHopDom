@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài tổng hợp</title>
+    <link rel="stylesheet" href="./css/baiTongHop.css">
+</head>
+
+<body>
+    <h2>THÔNG TIN HỌC VIÊN</h2>
+    <form id="formThongTin" onsubmit="save(event)">
+        <label for="id">Mã học viên</label>
+        <input type="text" name="id" id="id"><br>
+
+        
+        <label for="name">Họ và tên</label>
+        <input type="text" name="name" id="name">
+        <p id="errorName"></p><br>
+        
+        <label for="email">email</label>
+        <input type="text" name="email" id="email">
+        <p id="errorEmail"></p><br>
+ 
+        <label for="phone">Số điện thoại</label>
+        <input type="text" name="phone" id="phone">
+        <p id="errorPhone"></p><p>
+
+        <label for="address">Quê quán</label>
+        <input type="address" name="address" id="address">
+        <p id="errorAddress"></p><br>
+
+        <label for="xex">Giới tính</label>
+        <input type="radio" name="xex" value="nam" id="nam" checked>
+        <label for="xex">Nam</label>
+        <input type="radio" name="xex" value="nữ">
+        <label for="xex">nữ</label><br>
+        <button type="submit">save</button>
+
+    </form>
+
+    <h2>Danh sách học viên</h2>
+    <label>Tìm kiếm tên học viên</label>
+    <input type="text" id="searchName">
+    <button >search</button>
+    <table id="bangDanhSach">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Mã sinh viên</th>
+                <th>Họ tên</th>
+                <th>Email</th>
+                <th>Điện thoại</th>
+                <th>Địa chỉ</th>
+                <th>Grender</th>
+                <th>Hành động</th>
+                <th>Sắp xếp (alpha b)</th>
+            </tr>
+        </thead>
+        <tbody id="dongMoi">
+
+        </tbody>
+
+    </table>
+
+
+
+    <script src="/baiTongHop.js"></script>
+</body>
+
+</html>
